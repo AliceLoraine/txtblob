@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit-lottie
 from textblob import TextBlob
 from googletrans import Translator
 
