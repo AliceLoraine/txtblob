@@ -2,7 +2,7 @@ import streamlit as st
 
 from textblob import TextBlob
 from googletrans import Translator
-
+streamlit-lottie
 from streamlit_lottie import st_lottie
 import json
 
