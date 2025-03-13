@@ -2,10 +2,13 @@ import streamlit as st
 from textblob import TextBlob
 from googletrans import Translator
 
+from streamlit_lottie import st_lottie
+import json
+
 translator = Translator()
 st.title('Uso de textblob')
 
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+st.subheader("Write where you please")
 with st.sidebar:
                st.subheader("Polaridad y Subjetividad")
                ("""
@@ -18,6 +21,9 @@ with st.sidebar:
                  """
                ) 
 
+with open('graficos.json') as source:
+  animation=json.load(source)
+st.lottie(animation,width=350)
 
 with st.expander('Analizar Polaridad y Subjetividad en un texto'):
     text1 = st.text_area('Escribe por favor: ')
