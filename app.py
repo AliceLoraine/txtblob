@@ -1,7 +1,7 @@
-streamlit-lottie
+
 import streamlit as st
 
-from streamlit_lottie import st_lottie
+
 from textblob import TextBlob
 from googletrans import Translator
 
